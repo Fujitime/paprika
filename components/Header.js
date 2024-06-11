@@ -1,8 +1,4 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
 import Image from "next/image";
 
 import Logo from "../public/paprikacon.png";

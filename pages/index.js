@@ -1,8 +1,7 @@
-import Header from "../components/header";
-import SectionService from "../components/sectionservice";
-import SectionOneHomePage from "../components/sectiononehomepage";
-import SectionTwoHomePage from "../components/sectiontwohomepage";
-import SectionThereHomePage from "../components/sectiontherehomepage";
+import Header from "../components/Header";
+import SectionService from "../components/SectionService";
+import SectionOneHomePage from "../components/SectionHereHomePage";
+import SectionTwoHomePage from "../components/SectionTwoHomePage";
 
 export default function Home() {
   return (
@@ -11,7 +10,6 @@ export default function Home() {
       <SectionService />
       <SectionOneHomePage />
       <SectionTwoHomePage />
-      <SectionThereHomePage />
     </div>
   );
 }
