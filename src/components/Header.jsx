@@ -1,4 +1,9 @@
 import React from 'react';
+import PaprikaBG from '../../public/paprika2.jpeg';
+import Paprika1 from '../../public/1.png';
+import Paprika2 from '../../public/2.png';
+import Paprika3 from '../../public/3.png';
+
 
 const Header = () => {
     const handleSendMessage = () => {
@@ -8,7 +13,7 @@ const Header = () => {
         window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
       };
   return (
-    <header className="relative bg-cover bg-center h-screen" style={{ backgroundImage: 'url(../public/paprika2.jpeg)' }}>
+    <header className="relative bg-cover bg-center h-screen" style={{ backgroundImage: {PaprikaBG} }}>
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 opacity-90"></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 space-y-8">
         <div className="text-center text-white">
@@ -35,9 +40,9 @@ const Header = () => {
         </div>
         <div className="relative w-full max-w-4xl mx-auto mt-10">
           <div className="flex  no-scrollbar space-x-4 pb-4">
-            <img src="../public/1.png" alt="Paprika 1" className="w-1/3 rounded-lg transform hover:scale-105 transition duration-300" />
-            <img src="../public/3.png" alt="Paprika 2" className="w-1/3 rounded-lg transform hover:scale-105 transition duration-300" />
-            <img src="../public/2.png" alt="Paprika 3" className="w-1/3 rounded-lg transform hover:scale-105 transition duration-300" />
+            <img src={Paprika1} alt="Paprika 1" className="w-1/3 rounded-lg transform hover:scale-105 transition duration-300" />
+            <img src={Paprika3} alt="Paprika 2" className="w-1/3 rounded-lg transform hover:scale-105 transition duration-300" />
+            <img src={Paprika2} alt="Paprika 3" className="w-1/3 rounded-lg transform hover:scale-105 transition duration-300" />
           </div>
         </div>
       </div>
