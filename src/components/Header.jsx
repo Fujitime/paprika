@@ -13,8 +13,7 @@ const Header = () => {
         window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
       };
   return (
-    <header className="relative bg-cover bg-center h-screen" style={{ backgroundImage: {PaprikaBG} }}>
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 opacity-90"></div>
+<header className="relative bg-cover bg-center h-screen" style={{ backgroundImage: `url(${PaprikaBG})` }}>      <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 opacity-90"></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 space-y-8">
         <div className="text-center text-white">
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold mb-6 drop-shadow-lg">
