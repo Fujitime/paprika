@@ -1,31 +1,48 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import Logo from "../../public/1.png";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  
-
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav
+      className={`bg-white border-gray-200 dark:bg-gray-900 fixed w-full top-0 transition-all duration-300 z-50 ${
+        isScrolled ? "shadow-lg py-2" : ""
+      }`}
+    >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/">
-          <a className="flex items-center space-x-1 rtl:space-x-reverse">
-            <img src={Logo} alt="Logo" width={60}   />
-             <span
-                  className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white bg-gradient-to-r from-red-500 to-green-500 rounded-lg px-2 py-1 animate-gradient"
-                  style={{
-                    WebkitBackgroundClip: "text",
-                    color: "transparent",
-                    animation: "rainbow 3s linear infinite"
-                  }}
-                >
-                  HD Paprika
+          <div className="flex items-center space-x-1 rtl:space-x-reverse">
+            <img src={Logo} alt="Logo" width={60} />
+            <span
+              className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white bg-gradient-to-r from-red-500 to-green-500 rounded-lg px-2 py-1 animate-gradient"
+              style={{
+                WebkitBackgroundClip: "text",
+                color: "transparent",
+                animation: "rainbow 3s linear infinite"
+              }}
+            >
+              HD Paprika
             </span>
-          </a>
+          </div>
         </a>
         <button
           onClick={toggleMenu}
@@ -71,46 +88,29 @@ const Navbar = () => {
         >
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                aria-current="page"
+              <NavLink
+                to="/"
+                className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${
+                  location.pathname === "/"
+                    ? " text-white bg-blue-700 rounded md:bg-transparent  md:p-0 dark:text-white md:dark:text-blue-500 md:text-blue-700 "
+                    : ""
+                }`}
               >
                 Home
-              </a>
+              </NavLink>
             </li>
-            {/* <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            <li>
+              <NavLink
+                to="/about"
+                className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${
+                  location.pathname === "/about"
+                    ? " text-white bg-blue-700 rounded md:bg-transparent  md:p-0 dark:text-white md:dark:text-blue-500 md:text-blue-700 "
+                    : ""
+                }`}
               >
                 About
-              </a>
+              </NavLink>
             </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Contact
-              </a>
-            </li> */}
           </ul>
         </div>
       </div>
