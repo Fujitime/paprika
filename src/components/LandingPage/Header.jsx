@@ -1,6 +1,6 @@
 import React from 'react';
 import 'animate.css';
-import PaprikaBG from '../../public/paprika2.jpeg';
+import PaprikaBG from '../../../public/paprika2.jpeg';
 
 const Header = () => {
     const handleSendMessage = () => {

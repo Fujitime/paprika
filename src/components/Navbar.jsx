@@ -96,7 +96,7 @@ const Navbar = () => {
                     : ""
                 }`}
               >
-                Home
+                Beranda
               </NavLink>
             </li>
             <li>
@@ -108,7 +108,7 @@ const Navbar = () => {
                     : ""
                 }`}
               >
-                About
+                Tentang Kami
               </NavLink>
             </li>
           </ul>

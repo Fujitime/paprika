@@ -9,7 +9,7 @@ const About = () => {
   return (
     <>
         <Navbar/>
-      <section className="relative py-12 bg-white">
+      <section className="relative py-12 bg-white mt-16">
       <div className="absolute inset-0 overflow-hidden">
       <svg className="absolute left-0 z-10 transform -translate-x-1/2 -translate-y-1/2  opacity-20 text-blue-800 animate-spin-slow" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <path fill="#0F62FE" d="M26.2,-29.9C38,-27.4,54.5,-25.2,59.3,-17.6C64.2,-9.9,57.4,3.3,48.4,10.9C39.3,18.6,27.9,20.7,19.5,26.6C11,32.5,5.5,42.3,-7,51.9C-19.4,61.4,-38.8,70.8,-45.1,64.2C-51.4,57.5,-44.5,34.9,-42.6,19C-40.7,3.1,-43.7,-6,-43.1,-15.9C-42.6,-25.8,-38.4,-36.5,-30.6,-40.3C-22.9,-44,-11.4,-40.8,-2.1,-37.8C7.2,-34.9,14.4,-32.3,26.2,-29.9Z" transform="translate(100 100)" />
