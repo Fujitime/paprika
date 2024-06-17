@@ -5,6 +5,7 @@ import Paprika1 from '../../public/1.png';
 import Paprika2 from '../../public/2.png';
 import Paprika3 from '../../public/3.png';
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 const About = () => {
   return (
     <>
@@ -67,6 +68,7 @@ const About = () => {
         </div>
       </div>
     </section>
+    <Footer/>
     </>
 
   );
