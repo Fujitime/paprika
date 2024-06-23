@@ -34,9 +34,6 @@ const Footer = () => {
             </span>
           </button>
         </div>
-        <div className="mb-8">
-          <a href="mailto:hdpaprika@hdpaprika.com" className="sm:text-2xl text-l font-bold bg-white text-green-500 px-4 py-2 rounded-full shadow-lg hover:bg-gray-200 transition duration-300">hdpaprika@hdpaprika.com</a>
-        </div>
         <div className="mt-12 text-gray-200">
           <p className="text-sm">&copy; 2024 HDPaprika Inc. All rights reserved.</p>
         </div>
