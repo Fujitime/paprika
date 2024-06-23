@@ -35,7 +35,7 @@ const Footer = () => {
           </button>
         </div>
         <div className="mt-12 text-gray-200">
-          <p className="text-sm">&copy; 2024 HDPaprika Inc. All rights reserved.</p>
+          <p className="text-sm">&copy; 2024 HD Paprika. All rights reserved.</p>
         </div>
       </div>
     </footer>

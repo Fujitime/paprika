@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Paprika3 from '../../public/paprika1.jpeg';
-import Paprika2 from '../../public/paprika2.jpeg';
+import Paprika3 from '../../public/12.jpg';
+import Paprika2 from '../../public/11.jpg';
 
 const articles = [
   {
@@ -11,22 +11,20 @@ const articles = [
     title: 'Apa Itu Paprika?',
     slug: 'apa-itu-paprika',
     thumbnail: `${Paprika3}`, // URL thumbnail gambar
-    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan ante sit amet velit venenatis, non venenatis dolor rutrum.'
-  },
-  {
+    excerpt: 'Pernahkah Anda bertanya-tanya apa sebenarnya paprika? Mari kita telusuri rahasia keunikan dan kelezatan paprika.'
+},  {
     id: 2,
     title: 'Kenapa Membeli Paprika Kami?',
     slug: 'kenapa-membeli-paprika-kami',
     thumbnail: `${Paprika2}`, // URL thumbnail gambar
-    excerpt: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
-  }
-];
+    excerpt: 'Temukan alasan mengapa paprika kami berbeda dan bagaimana hal ini bisa membuat perbedaan besar di dapur Anda.'
+}];
 
 const ArticleListPage = () => {
   return (
     <>
       <Navbar />
-      <section className="px-4 py-16 bg-gray-100">
+      <section className="px-4 py-16 bg-gray-100 mt-12">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl font-bold mb-8 text-center">Daftar Artikel</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
