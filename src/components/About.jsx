@@ -1,6 +1,6 @@
 import React from 'react';
 import 'animate.css';
-import AboutImage from '../../public/paprika1.jpeg';
+import AboutImage from '../../public/pfp.jpg';
 import Paprika1 from '../../public/1.png';
 import Paprika2 from '../../public/2.png';
 import Paprika3 from '../../public/3.png';
@@ -23,7 +23,8 @@ const About = () => {
         <div className="text-center mb-10 animate__animated animate__fadeInLeft ">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800">Tentang Kami</h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-          Kami adalah pemasok paprika yang telah berdiri sejak tahun 2010. Dengan komitmen untuk menyediakan produk berkualitas tinggi, kami menjalin kerjasama erat dengan petani lokal untuk memastikan ketersediaan dan kualitas paprika yang terbaik bagi pelanggan kami.          </p>
+          Kami adalah pemasok paprika yang telah berdiri sejak tahun 2010. Didirikan oleh Dindin Hamdani.  
+          </p>
         </div>
         <div className="flex flex-wrap items-center">
           <div className="w-full md:w-1/2 p-6">
@@ -33,6 +34,10 @@ const About = () => {
               className="rounded-lg shadow-lg transform hover:scale-105 transition duration-300 animate__animated animate__fadeInLeft"
             />
           </div>
+
+          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          Menjalin kerjasama erat dengan petani lokal untuk memastikan ketersediaan dan kualitas paprika yang terbaik bagi pelanggan.
+          </p>
           <div className="w-full md:w-1/2 p-6">
   <h3 className="text-2xl flex sm:text-3xl font-extrabold text-gray-800 mb-4">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M21.7267 2.95694L16.2734 22.0432C16.1225 22.5716 15.7979 22.5956 15.5563 22.1126L11 13L1.9229 9.36919C1.41322 9.16532 1.41953 8.86022 1.95695 8.68108L21.0432 2.31901C21.5716 2.14285 21.8747 2.43866 21.7267 2.95694ZM19.0353 5.09647L6.81221 9.17085L12.4488 11.4255L15.4895 17.5068L19.0353 5.09647Z"></path></svg>

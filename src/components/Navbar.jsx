@@ -101,6 +101,18 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
+                to="/about"
+                className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0   ${
+                  location.pathname === "/about"
+                    ? " text-white bg-blue-700 rounded md:bg-transparent  md:p-0 md:text-blue-700 "
+                    : ""
+                }`}
+              >
+                Tentang Kami
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/article"
                 className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0   ${
                   location.pathname === "/article"
@@ -123,18 +135,7 @@ const Navbar = () => {
                 Gallery
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/about"
-                className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0   ${
-                  location.pathname === "/about"
-                    ? " text-white bg-blue-700 rounded md:bg-transparent  md:p-0 md:text-blue-700 "
-                    : ""
-                }`}
-              >
-                Tentang Kami
-              </NavLink>
-            </li>
+
             <li>
               <NavLink
                 to="/contact"

@@ -11,8 +11,8 @@ const TextSection = () => {
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-4xl font-bold mb-6 animate__animated animate__fadeIn animate__delay-3s">Untuk apa membeli Paprika?</h2>
         <p className="text-lg leading-relaxed animate__animated animate__fadeIn animate__delay-4s">
-          Dengan paprika berkualitas premium kami, setiap hidangan Anda menjadi perayaan rasa dan keindahan. Setiap gigitan mempersembahkan harmoni unik antara aroma segar dan rasa yang memikat, menciptakan pengalaman kuliner yang tiada tara. Dari restoran hingga hotel, paprika kami menjadi pilihan utama para koki profesional yang menghargai keaslian dan kualitas.
-           Segera temukan paprika kami dan tambahkan sentuhan ke setiap hidangan Anda!
+          Dengan paprika berkualitas premium kami, setiap hidangan Anda menjadi perayaan rasa dan keindahan.
+           Segera temukan paprika kami!
         </p>
       </div>
     </section>
